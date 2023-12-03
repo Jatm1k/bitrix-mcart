@@ -9,7 +9,7 @@
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
               "COMPONENT_TEMPLATE" => ".default",
-              "PATH" => "/local/components/footer/about.php"
+              "PATH" => "/local/templates/home/components/footer/about.php"
             ),
             false
         );?>
@@ -38,7 +38,7 @@
               "AREA_FILE_SUFFIX" => "inc",
               "EDIT_TEMPLATE" => "",
               "COMPONENT_TEMPLATE" => ".default",
-              "PATH" => "/local/components/footer/socials.php"
+              "PATH" => "/local/templates/home/components/footer/socials.php"
             ),
             false
         );?>

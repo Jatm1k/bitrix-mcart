@@ -62,7 +62,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/components/header/phone.php"
+                        "PATH" => "/local/templates/home/components/header/phone.php"
                       ),
                       false
                     );?>
@@ -77,7 +77,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/components/header/mail.php"
+                        "PATH" => "/local/templates/home/components/header/mail.php"
                       ),
                       false
                     );?>
@@ -92,7 +92,7 @@ IncludeTemplateLangFile(__FILE__);
                   "AREA_FILE_SUFFIX" => "inc",
                   "EDIT_TEMPLATE" => "",
                   "COMPONENT_TEMPLATE" => ".default",
-                  "PATH" => "/local/components/header/socials.php"
+                  "PATH" => "/local/templates/home/components/header/socials.php"
                 ),
                 false
               );?>
@@ -113,7 +113,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/components/header/logo.php"
+                        "PATH" => "/local/templates/home/components/header/logo.php"
                       ),
                       false
                     );?></strong></a></h1>
@@ -140,3 +140,25 @@ IncludeTemplateLangFile(__FILE__);
       </div>
     </div>
   </div>
+
+<? if ($APPLICATION->GetCurPage(false) !== '/'): ?>
+  <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(<?= SITE_TEMPLATE_PATH ?>/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-md-10">
+          <h1 class="mb-2"><?$APPLICATION->ShowTitle(false)?></h1>
+          <?$APPLICATION->IncludeComponent(
+          "bitrix:breadcrumb",
+          "breadcrumbs",
+          Array(
+            "COMPONENT_TEMPLATE" => "breadcrumbs",
+            "PATH" => "",
+            "SITE_ID" => "s1",
+            "START_FROM" => "0"
+          )
+        );?>
+        </div>
+      </div>
+    </div>
+  </div>
+<? endif; ?>
