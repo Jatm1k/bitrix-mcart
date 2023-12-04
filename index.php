@@ -85,7 +85,7 @@ $APPLICATION->SetTitle("Главная");
             "AREA_FILE_SHOW" => "file",
             "AREA_FILE_SUFFIX" => "inc",
             "EDIT_TEMPLATE" => "",
-            "PATH" => "/local/templates/home/components/advantages/first_advantage.php"
+            "PATH" => SITE_TEMPLATE_PATH . "/components/advantages/first_advantage.php"
           )
         );?>
         <?$APPLICATION->IncludeComponent(
@@ -95,7 +95,7 @@ $APPLICATION->SetTitle("Главная");
             "AREA_FILE_SHOW" => "file",
             "AREA_FILE_SUFFIX" => "inc",
             "EDIT_TEMPLATE" => "",
-            "PATH" => "/local/templates/home/components/advantages/second_advantage.php"
+            "PATH" => SITE_TEMPLATE_PATH . "/components/advantages/second_advantage.php"
           )
         );?>
         <?$APPLICATION->IncludeComponent(
@@ -105,7 +105,7 @@ $APPLICATION->SetTitle("Главная");
             "AREA_FILE_SHOW" => "file",
             "AREA_FILE_SUFFIX" => "inc",
             "EDIT_TEMPLATE" => "",
-            "PATH" => "/local/templates/home/components/advantages/third_advantage.php"
+            "PATH" => SITE_TEMPLATE_PATH . "/components/advantages/third_advantage.php"
           )
         );?>
       </div>

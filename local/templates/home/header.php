@@ -3,7 +3,7 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= LANGUAGE_ID ?>">
 
 <head>
   <title><?$APPLICATION->ShowTitle()?></title>
@@ -15,19 +15,19 @@ IncludeTemplateLangFile(__FILE__);
 
 	<?
 	
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/fonts/icomoon/style.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/bootstrap.min.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/magnific-popup.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/jquery-ui.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/owl.carousel.min.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/owl.theme.default.min.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/bootstrap-datepicker.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/mediaelementplayer.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/animate.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/fonts/flaticon/font/flaticon.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/fl-bigmug-line.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/aos.css");
-	$APPLICATION->SetAdditionalCSS("/local/templates/home/css/style.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/fonts/icomoon/style.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/bootstrap.min.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/magnific-popup.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/jquery-ui.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/owl.carousel.min.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/owl.theme.default.min.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/bootstrap-datepicker.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/mediaelementplayer.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/animate.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/fonts/flaticon/font/flaticon.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/aos.css");
+	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/style.css");
 	?>
 
 </head>
@@ -62,7 +62,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/templates/home/components/header/phone.php"
+                        "PATH" => SITE_TEMPLATE_PATH . "/components/header/phone.php"
                       ),
                       false
                     );?>
@@ -77,7 +77,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/templates/home/components/header/mail.php"
+                        "PATH" => SITE_TEMPLATE_PATH . "/components/header/mail.php"
                       ),
                       false
                     );?>
@@ -92,7 +92,7 @@ IncludeTemplateLangFile(__FILE__);
                   "AREA_FILE_SUFFIX" => "inc",
                   "EDIT_TEMPLATE" => "",
                   "COMPONENT_TEMPLATE" => ".default",
-                  "PATH" => "/local/templates/home/components/header/socials.php"
+                  "PATH" => SITE_TEMPLATE_PATH . "/components/header/socials.php"
                 ),
                 false
               );?>
@@ -113,7 +113,7 @@ IncludeTemplateLangFile(__FILE__);
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
                         "COMPONENT_TEMPLATE" => ".default",
-                        "PATH" => "/local/templates/home/components/header/logo.php"
+                        "PATH" => SITE_TEMPLATE_PATH . "/components/header/logo.php"
                       ),
                       false
                     );?></strong></a></h1>
