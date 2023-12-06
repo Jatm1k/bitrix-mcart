@@ -1,0 +1,12 @@
+.card-preview {
+	object-fit: cover;
+	height: 100% !important;
+}
+
+.d-block {
+	height: 100%;
+}
+
+figure {
+	height: 100%;
+}
