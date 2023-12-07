@@ -1,14 +1,41 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Обратная связь");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:main.feedback",
-	"",
-	Array(
-		"EMAIL_TO" => "kurb.nikolay@gmail.com",
-		"EVENT_MESSAGE_ID" => array(),
-		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-		"REQUIRED_FIELDS" => array("NAME","EMAIL","MESSAGE"),
-		"USE_CAPTCHA" => "Y"
-	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?>
+<div class="site-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-8 mb-5">
+				<?$APPLICATION->IncludeComponent("bitrix:main.feedback", "feedback", Array(
+					"EMAIL_TO" => "kurb.nikolay@gmail.com",	// E-mail, на который будет отправлено письмо
+						"EVENT_MESSAGE_ID" => array(	// Почтовые шаблоны для отправки письма
+							0 => "7",
+						),
+						"OK_TEXT" => "Спасибо, ваше сообщение принято.",	// Сообщение, выводимое пользователю после отправки
+						"REQUIRED_FIELDS" => array(	// Обязательные поля для заполнения
+							0 => "NAME",
+							1 => "EMAIL",
+							2 => "MESSAGE",
+						),
+						"USE_CAPTCHA" => "Y",	// Использовать защиту от автоматических сообщений (CAPTCHA) для неавторизованных пользователей
+						"COMPONENT_TEMPLATE" => ".default"
+					),
+					false
+				);?>
+
+			</div>
+
+			<?$APPLICATION->IncludeComponent(
+          "bitrix:main.include",
+          "",
+          Array(
+            "AREA_FILE_SHOW" => "file",
+            "AREA_FILE_SUFFIX" => "inc",
+            "EDIT_TEMPLATE" => "",
+            "PATH" => SITE_TEMPLATE_PATH . "/components/about/feedback.php"
+          )
+        );?>
+		</div>	
+	</div>
+</div>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
