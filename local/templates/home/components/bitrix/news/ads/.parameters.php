@@ -28,6 +28,10 @@ $arTemplateParameters = array(
 		"DEFAULT" =>"N",
 		"REFRESH"=> "Y",
 	),
+		"DISPLAY_TITLE_PAGE" => Array(
+			"NAME" => GetMessage("DISPLAY_TITLE_PAGE"),
+			"TYPE" => "STRING",
+	)
 );
 
 if (($arCurrentValues['USE_SHARE'] ?? 'N') === 'Y')

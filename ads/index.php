@@ -36,6 +36,7 @@ $APPLICATION->SetTitle("Объявления");
 			4 => "PRICE",
 			5 => "IMAGE_GALLERY",
 			6 => "ADDITIONAL_MATERIALS",
+			7 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -93,6 +94,7 @@ $APPLICATION->SetTitle("Объявления");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"USE_SHARE" => "N",
+		"DISPLAY_TITLE_PAGE" => "Новые объявления для вас",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
