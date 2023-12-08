@@ -69,6 +69,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"false" 
+	),
+	Array(
+		"Войти", 
+		SITE_DIR."auth/", 
+		Array(), 
+		Array(), 
+		"!\$USER->IsAuthorized()" 
 	)
 );
 ?>
