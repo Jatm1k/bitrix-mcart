@@ -10,7 +10,7 @@
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
-
+<?if ($arItem["PERMISSION"] > "D"):?>
 	<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>
 		<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
 	<?endif?>
@@ -33,7 +33,7 @@ foreach($arResult as $arItem):?>
 	<?endif?>
 
 	<?$previousLevel = $arItem["DEPTH_LEVEL"];?>
-
+<?endif?>
 <?endforeach?>
 
 <?if ($previousLevel > 1)://close last item tags?>
