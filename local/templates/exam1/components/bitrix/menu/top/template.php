@@ -15,7 +15,7 @@
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
-
+<?if ($arItem["PERMISSION"] > "D"):?>
 	<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>
 		<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
 	<?endif?>
@@ -30,16 +30,15 @@ foreach($arResult as $arItem):?>
 
 	<?else:?>
 
-		<?if ($arItem["PERMISSION"] > "D"):?>
+
 
 				<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
 
-		<?endif?>
 
 	<?endif?>
 
 	<?$previousLevel = $arItem["DEPTH_LEVEL"];?>
-
+<?endif?>
 <?endforeach?>
 
 <?if ($previousLevel > 1)://close last item tags?>

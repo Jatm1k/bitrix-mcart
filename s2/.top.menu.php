@@ -29,13 +29,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Партнерам", 
-		SITE_DIR."partneram/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Отзывы", 
 		SITE_DIR."rew/", 
 		Array(), 
@@ -45,6 +38,13 @@ $aMenuLinks = Array(
 	Array(
 		"Поиск", 
 		SITE_DIR."search/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнерам", 
+		SITE_DIR."partneram/", 
 		Array(), 
 		Array(), 
 		"" 
